@@ -1,0 +1,17 @@
+syntax="proto3"
+
+enum days{
+    days_undefined=0;
+    days_monday=1;
+    days_tuesday=2;
+    days_wednesday=3;
+    days_thrusday=4;
+    days_friday=5;
+    days_saturday=6;
+    days_sunday=7
+} 
+
+
+message DayOfWeek {
+    days day=1;
+}
