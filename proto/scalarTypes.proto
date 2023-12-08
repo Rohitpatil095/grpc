@@ -1,0 +1,23 @@
+syntax="proto3"
+
+enum EyeColor{
+    EYE_COLOR_NOTDECLARED =0;
+    EYE_COLOR_BLUE=1;
+    EYE_COLOR_BLACK=2;
+    EYE_COLOR_GREEN=3;
+}
+
+/* 
+    this is sample account
+*/
+message Account{
+    int32 id=1;
+    string name=2;
+    bytes thumbnail=3;  // it will be jpeg
+
+    // need to be true 
+    bool is_verified=4;
+    float height=5;
+
+    EyeColor my_eye_color= 5;
+}
